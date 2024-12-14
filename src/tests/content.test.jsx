@@ -1,6 +1,6 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
-import Content from '../components/content';
+import Content from '../components/Content';
 import { findAll, deleteRecord } from '../infrastructure/repo';
 
 // Mock the repository functions
