@@ -26,11 +26,7 @@ export default function Content() {
     }
 
     const allTime = () => {
-      let ret = 0;
-      records.map((record) => (
-        ret += parseInt(record.time)
-      ))
-      return ret;
+      return records.reduce((total, record) => total + parseInt(record.time), 0);
     }
 
     const fetchRecords = async () => {
