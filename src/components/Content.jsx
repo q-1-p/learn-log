@@ -64,7 +64,7 @@ export default function Content() {
         <p></p>
         {records.map((record) =>(
             <div key={record.id}>
-                <button onClick={() => removeRecord(record.id)}>削除</button>
+                <button style={{color: "red"}} onClick={() => removeRecord(record.id)}>削除</button>
                 <span>{record.title} {record.time}時間</span>
             </div>
         ))}
