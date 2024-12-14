@@ -1,8 +1,37 @@
-# React + Vite
+# Learn Log
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## サービス概要
+日々の学習内容を記録できるWebアプリケーションです。
 
-Currently, two official plugins are available:
+## 環境設定
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 環境変数の設定
+1. プロジェクトのルートディレクトリに `.env` ファイルを作成
+2. 以下の環境変数を設定:
+```
+VITE_SUPABASE_URL
+VITE_SUPABASE_ANON_KEY
+```
+
+## 起動方法
+
+### 開発環境での起動
+1. 依存パッケージのインストール
+```bash
+bun install
+```
+
+2. 開発サーバーの起動
+```bash
+bun run dev
+```
+
+### テストの実行
+```bash
+bun run test
+```
+
+### ビルド
+```bash
+bun run build
+```
