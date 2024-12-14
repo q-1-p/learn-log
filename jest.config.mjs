@@ -2,7 +2,8 @@ export default {
   testEnvironment: "jsdom",
   moduleNameMapper: {
     "\\.(css|less)$": "identity-obj-proxy",
-    "^@/(.*)$": "<rootDir>/src/$1"
+    "^@/(.*)$": "<rootDir>/src/$1",
+    "@supabase/supabase-js": "<rootDir>/src/tests/__mocks__/supabase.js"
   },
   setupFilesAfterEnv: ["./jest.setup.js"],
   transform: {
