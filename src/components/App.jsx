@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import Content from "./content";
+import Content from "./Content";
 
 export default function App() {
   return (
